@@ -72,7 +72,7 @@ const Hero = forwardRef((props, scrollRef) => {
         <div className=" w-[150px] h-[150px] sm:w-[250px] sm:h-[250px] lg:w-[350px] lg:h-[350px] absolute  transform top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 rotate-45 p-4 bg-gray-600/30 mix-blend-lighten  "></div>
       </article>
 
-      <article className="flex-1 w-full lg:w-3/5 space-y-2 ">
+      <article className="flex-1 w-full lg:w-3/5 space-y-4 ">
         <p className="text-[25px] text-primary flex-row flex space-x-2 pb-4">
           <AiFillStar />
           <AiFillStar />
@@ -80,11 +80,11 @@ const Hero = forwardRef((props, scrollRef) => {
           <AiFillStar />
           <AiFillStar />
         </p>
-        <h3 className="text-[16px] lg:text-[14px] lg:tracking-[0.4em] font-gilda font-medium text-gray-500 my-[0.5em]">
+        <h3 className="text-[20px] lg:text-[14px] lg:tracking-[0.4em] font-gilda font-medium text-gray-500 my-[0.5em]">
           THE MOST LUXURIOUS SHORTLETS IN LAGOS
         </h3>
         <h1
-          className="text-[25px] sm:text-[36px] lg:text-[40px] font-gilda tracking-[0.1em] font-medium text-gray-600
+          className="hidden lg:block text-[30px] sm:text-[36px] lg:text-[40px] font-gilda tracking-[0.1em] font-medium text-gray-600
           "
         >
           Manifest a Luxury Experience

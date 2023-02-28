@@ -86,10 +86,10 @@ const Home = () => {
                   >
                     <div className="absolute top-0 left-0 h-full w-full z-40 bg-[rgba(0,0,0,0.55)]  ">
                       <section
-                        className="relative flex justify-center items-center w-full h-full"
+                        className="relative flex justify-center items-center w-full  h-full"
                         key={banner.id}
                       >
-                        <div className="flex flex-col justify-center lg:w-[60%] w-full   items-center space-y-6 lg:space-y-12 mt-8 text-center px-1 wrap">
+                        <div className="flex flex-col justify-center lg:w-[60%] w-full   items-center space-y-10 lg:space-y-12 mt-8 text-center px-1 wrap">
                           <ul className="flex flex-row justify-center lg:space-x-6">
                             <li>
                               <AiFillStar className="text-[20px] text-yellow-600" />
@@ -114,10 +114,10 @@ const Home = () => {
                             Luxury Vacation &amp; Holiday spot
                           </p>
                           <article>
-                            <h3 className="text-[36px]    font-gilda text-white font-bold lg:text-[50px] md:text-[45px] lg:tracking-[.45em] uppercase">
+                            <h3 className="text-[30px] px-6  font-gilda text-white font-bold lg:text-[50px] md:text-[45px] lg:tracking-[.45em] uppercase">
                               {banner.title}
                             </h3>
-                            <div className="flex flex-row justify-center space-x-6">
+                            <div className="flex flex-row justify-center space-x-6 mt-12">
                               <Link
                                 to="/details"
                                 onClick={() => setShowBookingForm(true)}
