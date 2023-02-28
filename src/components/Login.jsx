@@ -6,17 +6,17 @@ const Login = () => {
   return (
     <section className=" relative bg-gradient-to-br from-orange-100  to-yellow-100 bg-white overflow-hidden h-screen justify-center items-center flex ">
       <div className="relative z-10 flex flex-wrap -m-8">
-        <div className="w-full md:w-1/2 p-8">
+        <div className="w-full hidden lg:block lg:w-1/2 p-8">
           <div className="container px-4 mx-auto">
             <div className="flex flex-wrap">
               <div className="w-full">
                 <div className="md:max-w-lg mx-auto pt-16 md:pb-32">
                   <Link className="mb-28 inline-block" href="#"></Link>
-                  <h2 className="mb-16 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight font-gilda text-gray-600">
+                  <h2 className="mb-4 lg:mb-16 text-3xl lg:text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight font-gilda text-gray-600">
                     Sign in for awesome luxury deals.
                   </h2>
 
-                  <ul className="md:max-w-xs">
+                  <ul className="hidden lg:block md:max-w-xs">
                     <li className="mb-5 flex flex-wrap">
                       <span>
                         <AiOutlineCheckCircle className="w-5 h-5 text-primary mr-2" />
@@ -40,9 +40,9 @@ const Login = () => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2 p-8  mix-blend-overlay mt-8 ">
-          <div className="p-4 py-16 flex flex-col justify-center bg-blueGray-100 h-full ">
-            <form className="md:max-w-lg mx-auto bg-white p-8 pt-12 rounded-lg shadow-md">
+        <div className="w-full h-screen lg:h-full flex items-center justify-center lg:block mt-32   lg:w-1/2 p-8  mix-blend-overlay lg:mt-8  ">
+          <div className="p-4 lg:py-16 flex flex-col justify-center  h-full ">
+            <form className="md:max-w-lg mx-auto  p-8 pt-12 rounded-lg shadow-md border">
               <label className="block mb-4">
                 <p className="mb-2 text-gray-900 font-semibold leading-normal">
                   Email Address *
@@ -101,8 +101,8 @@ const Login = () => {
                 Or continue with
               </p>
               <div className="flex flex-wrap justify-center -m-2">
-                <div className="w-auto p-2">
-                  <button className="flex items-center p-4 bg-white hover:bg-gray-50 border rounded-lg transition ease-in-out duration-200">
+                <div className="w-full lg:w-1/2 p-2">
+                  <button className="flex items-center p-4 bg-white hover:bg-gray-50 border rounded-lg transition ease-in-out duration-200 w-full text-center">
                     <img
                       className="mr-3"
                       src="flaro-assets/logos/brands/google.svg"
@@ -113,8 +113,8 @@ const Login = () => {
                     </span>
                   </button>
                 </div>
-                <div className="w-auto p-2">
-                  <button className="flex items-center p-4 bg-white hover:bg-gray-50 border rounded-lg transition ease-in-out duration-200">
+                <div className="hidden lg:block w-full lg:w-1/2 p-2">
+                  <button className="flex items-center p-4 bg-white hover:bg-gray-50 border rounded-lg transition ease-in-out duration-200 w-full">
                     <img
                       className="mr-3"
                       src="flaro-assets/logos/brands/fb.svg"
