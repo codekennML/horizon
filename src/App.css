@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@400;500;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .flex-section {
+    @apply my-20 flex  flex-col-reverse lg:flex-row items-start lg:justify-center lg:items-center  w-[90%] lg:w-[80%] mx-auto gap-x-12
+  }
+}
+html{
+  scroll-behavior: smooth;
+
+
+}
+body{
+  width: 100%;
+  margin: 0;
+  padding:0;
+}
+.slide{
+  animation: bounce .5s  ease-in-out infinite  alternate 
+}
+@keyframes bounce {
+  0%{
+    transform:translateY(10px)
+  }
+  100%{
+    transform: translateY(0px);
+  }
+  
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: .3s opacity;
+  transform: translate3d(0,0,0);
+  z-index: 10;
+  bottom: 30%;}
+  
+  .rdrDayDisabled,.rdrDayDisabled .rdrInRange,.rdrDayDisabled .rdrStartEdge {
+    filter: none;
+    color:blue
+  }
+  .rdrDayDisabled .rdrInRange{
+    color:yellow
+  }
+  .rdrDefinedRangesWrapper{
+              display: none;
+          }
+.rdrDateDisplayWrapper {
+              display: none;
+           }
+.rdrPprevButton i {
+              border-width: 8px 11px 7px 0px;
+              border-color: transparent rgb(131, 14, 199) transparent transparent;
+              transform: translate(-3px, 0px);
+            }
+            
+ .rdrNextButton i {
+              margin: 0 0 0 7px;
+              border-width: 8px 11px 7px 10px;
+              border-color: transparent transparent transparent rgb(131, 14, 199);
+              transform: translate(3px, 0px);
+            }
+            
+.rdrPprevButton,.rdrNextPrevButton {
+            background: transparent;
+            }
+            
+.rdrDayNumber {
+              font-weight: 600;
+           
+            }
+.rdrWeekDay {
+              font-weight: 600;
+              line-height: 2.667em;
+              color: rgb(17 19 19);
+            }
+ .rdrMonthAndYearPickers select {
+              font-weight: 600;
+            }
+            .rdrMonthName {
+              display: none;
+            }
+
+span.rdrInRange, span.rdrStartEdge, span.rdrEndEdge {
+  background-color: rgb(214, 122, 10);
+  /* border-radius: 0; */
+}
+/* .rdrInRange:hover{
+  border:gray
+} */
+.rdrDayStartPreview, .rdrDayInPreview, .rdrDayEndPreview {
+  position: relative;
+}
+/* .rdrDayStartPreview,.rdrDayEndPreview  {
+color:yellow;
+border: 0;
+border-radius: 0;
+} */
